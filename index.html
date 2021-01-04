@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hosted Tokenization Sample v0.1</title>
+    <script src="https://tokenization.develop.accept.blue/tokenization/v0.1"></script>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <form id="form">
+      <div class="input-wrapper">
+        <div class="mb-20">
+          <label>Name<br/><input id="name" name="name" value="John Doe"/></label>
+        </div>
+
+        <div class="mb-20">
+          <label>Amount<br/><input id="amount" name="amount" value="5"/></label>
+        </div>
+      </div>
+
+      <div id="iframe-container" class="mb-20"></div>
+
+      <div class="mb-20">
+        <button type="button" id="charge">Charge</button>
+      </div>
+
+      <div id="error-message"></div>
+    </form>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

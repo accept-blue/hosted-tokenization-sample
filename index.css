@@ -1,0 +1,35 @@
+input {
+  border-width: 0 0 1px 0;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.input-wrapper > div {
+  flex-basis: 50%;
+}
+
+#iframe-container {
+  height: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  width: 455px;
+  min-width: 455px;
+  max-width: 455px;
+}
+
+#error-message {
+  color: red;
+}
+
+.red-border {
+  border: 1px solid red;
+}
