@@ -31,19 +31,27 @@ async function _onChargeClick() {
     // Clear any errors
     _handleError();
 
-    // Send the data to the backend to process the transaction
-    const data = {
-      name: nameEl.value,
-      amount: parseFloat(amountEl.value),
-      nonce: result.nonce,
-      expiry_month: result.expiryMonth,
-      expiry_year: result.expiryYear,
-      avs_zip: result.avsZip,
-    };
-    // fetch() ...
+    return _process(result);
   } catch (err) {
     return _handleError(err);
   }
+}
+
+/**
+ * Send the data to the backend to process the transaction
+ * @param {object} result
+ * @private
+ */
+function _process(result) {
+  const data = {
+    name: nameEl.value,
+    amount: parseFloat(amountEl.value),
+    nonce: result.nonce,
+    expiry_month: result.expiryMonth,
+    expiry_year: result.expiryYear,
+    // avs_zip: result.avsZip,
+  };
+  // fetch() ...
 }
 
 /**
