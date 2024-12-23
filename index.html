@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Hosted Tokenization Sample v0.1</title>
-    <script src="https://tokenization.develop.accept.blue/tokenization/v0.2"></script>
+    <title>Hosted Tokenization Sample v0.3</title>
+    <script src="https://tokenization.develop.accept.blue/tokenization/v0.3"></script>
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
@@ -19,6 +19,14 @@
       </div>
 
       <div id="iframe-container" class="mb-20"></div>
+
+      <div class="mb-20">
+        Card number: <span id="masked-card"></span>
+      </div>
+
+      <div class="mb-20">
+        CVV: <span id="masked-cvv"></span>
+      </div>
 
       <div class="mb-20">
         <button type="button" id="charge">Charge</button>

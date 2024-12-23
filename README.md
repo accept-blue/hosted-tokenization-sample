@@ -1,3 +1,3 @@
-This shows sample code for the accept.blue Hosted Tokenization library v0.2.
+This shows sample code for the accept.blue Hosted Tokenization library v0.3.
 
-Please see the [documentation](https://docs.accept.blue/tokenization/v0.2) for more details.
+Please see the [documentation](https://docs.accept.blue/tokenization/v0.3) for more details.
